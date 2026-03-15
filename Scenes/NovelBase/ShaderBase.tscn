@@ -1,0 +1,142 @@
+[gd_scene format=3 uid="uid://dp1gdfk0hakq6"]
+
+[ext_resource type="Script" uid="uid://cgx66143iiip7" path="res://Scripts/Managers/EffectsManager.gd" id="1_qxlv0"]
+[ext_resource type="Shader" uid="uid://boispdved8hjp" path="res://Shaders/ScreenShakeShader.gdshader" id="2_6oaeo"]
+[ext_resource type="Shader" uid="uid://keb55r8ejkh2" path="res://Shaders/BlurShader.gdshader" id="2_lt7wi"]
+[ext_resource type="Shader" uid="uid://bfoktcbsy2y8v" path="res://Shaders/Glitch.gdshader" id="3_femex"]
+[ext_resource type="Shader" uid="uid://bwkskk0ko7127" path="res://Shaders/ChromaticAberration.gdshader" id="3_lrkqf"]
+[ext_resource type="Shader" uid="uid://cp2m8hpw7785m" path="res://Shaders/LUTShader.gdshader" id="5_8gflg"]
+[ext_resource type="Shader" uid="uid://bm22v6fjmrxgq" path="res://Shaders/VignetteShader.gdshader" id="6_3o5l4"]
+
+[sub_resource type="Environment" id="Environment_qxlv0"]
+background_mode = 3
+glow_enabled = true
+glow_blend_mode = 0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_lt7wi"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xskgk"]
+shader = ExtResource("2_6oaeo")
+shader_parameter/shake_power = 0.01
+shader_parameter/shake_rate = 1.0
+shader_parameter/shake_speed = 5.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lrkqf"]
+shader = ExtResource("2_lt7wi")
+shader_parameter/amount = 2.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8gflg"]
+shader = ExtResource("3_femex")
+shader_parameter/shake_power = 0.03
+shader_parameter/shake_rate = 0.2
+shader_parameter/shake_speed = 5.0
+shader_parameter/shake_block_size = 30.5
+shader_parameter/color_drift = 0.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_femex"]
+shader = ExtResource("3_lrkqf")
+shader_parameter/offset = 1.0000000475
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3o5l4"]
+shader = ExtResource("5_8gflg")
+shader_parameter/strength = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6oaeo"]
+shader = ExtResource("6_3o5l4")
+shader_parameter/multiplier = 0.2
+shader_parameter/softness = 3.0
+shader_parameter/radius = 0.5
+shader_parameter/vignette_color = Color(0, 0, 0, 1)
+
+[node name="ShaderBase" type="CanvasLayer" unique_id=610477400]
+layer = 4
+script = ExtResource("1_qxlv0")
+
+[node name="GloomEnviroment" type="WorldEnvironment" parent="." unique_id=1268772532]
+environment = SubResource("Environment_qxlv0")
+camera_attributes = SubResource("CameraAttributesPractical_lt7wi")
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="." unique_id=471276667]
+copy_mode = 2
+
+[node name="ScreenShakeRect" type="ColorRect" parent="." unique_id=1000786848]
+visible = false
+material = SubResource("ShaderMaterial_xskgk")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BlurRect" type="ColorRect" parent="." unique_id=1774444932]
+visible = false
+material = SubResource("ShaderMaterial_lrkqf")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy2" type="BackBufferCopy" parent="." unique_id=198477890]
+copy_mode = 2
+
+[node name="GlitchRect" type="ColorRect" parent="." unique_id=59676314]
+visible = false
+material = SubResource("ShaderMaterial_8gflg")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy3" type="BackBufferCopy" parent="." unique_id=1210474984]
+visible = false
+copy_mode = 2
+
+[node name="ChromoRect" type="ColorRect" parent="." unique_id=1080457049]
+visible = false
+material = SubResource("ShaderMaterial_femex")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BackBufferCopy4" type="BackBufferCopy" parent="." unique_id=917529390]
+copy_mode = 2
+
+[node name="LUTRect" type="ColorRect" parent="." unique_id=2103274469]
+visible = false
+material = SubResource("ShaderMaterial_3o5l4")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VigneteRect" type="ColorRect" parent="." unique_id=350714542]
+visible = false
+material = SubResource("ShaderMaterial_6oaeo")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -3.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FadeRect" type="ColorRect" parent="." unique_id=56562153]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -1.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

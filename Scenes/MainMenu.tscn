@@ -1,0 +1,135 @@
+[gd_scene format=3 uid="uid://ej75nmfvfmmj"]
+
+[ext_resource type="Script" uid="uid://wewyoloa1xf" path="res://Scripts/UI/main_menu.gd" id="1_ghw46"]
+[ext_resource type="Texture2D" uid="uid://dgalud6toonce" path="res://Assets/Images/Backgrounds/MainBackground.jpg" id="1_tt5f1"]
+[ext_resource type="FontFile" uid="uid://cos8x5t17df6c" path="res://Fonts/Orbitron-Bold.ttf" id="2_8saeu"]
+[ext_resource type="FontFile" uid="uid://df27q6rr480lc" path="res://Fonts/Exo2-Bold.ttf" id="3_ghw46"]
+[ext_resource type="Theme" uid="uid://b2dqwr0ll4vpl" path="res://Themes/SettingsTheme.tres" id="5_df05h"]
+
+[sub_resource type="Animation" id="Animation_8saeu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PressStart:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_ghw46"]
+resource_name = "TitleSpark"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PressStart:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.36666667, 0.6666667, 0.8333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [true, false, true, false, true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_df05h"]
+_data = {
+&"RESET": SubResource("Animation_8saeu"),
+&"TitleSpark": SubResource("Animation_ghw46")
+}
+
+[node name="MainMenu" type="CanvasLayer" unique_id=1468745962]
+script = ExtResource("1_ghw46")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1392035436]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.99592507, 0.99592507)
+texture = ExtResource("1_tt5f1")
+
+[node name="TitleLabel" type="Label" parent="." unique_id=205503298]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -382.0
+offset_right = 382.0
+offset_bottom = 101.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("2_8saeu")
+theme_override_font_sizes/font_size = 80
+text = "Higeki no Fainaru"
+horizontal_alignment = 1
+
+[node name="PressStart" type="Label" parent="." unique_id=99208732]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = 374.0
+offset_right = 162.0
+offset_bottom = 435.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_ghw46")
+theme_override_font_sizes/font_size = 50
+text = "PRESS START "
+horizontal_alignment = 1
+
+[node name="Animations" type="AnimationPlayer" parent="." unique_id=1404714678]
+libraries/ = SubResource("AnimationLibrary_df05h")
+autoplay = &"TitleSpark"
+
+[node name="MenuOptions" type="Control" parent="." unique_id=328732301]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="MenuOptions" unique_id=1110444698]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MenuOptions/CenterContainer" unique_id=674839065]
+layout_mode = 2
+alignment = 1
+
+[node name="StartButton" type="Button" parent="MenuOptions/CenterContainer/VBoxContainer" unique_id=1860147537]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("5_df05h")
+theme_override_font_sizes/font_size = 50
+text = "StartGame
+"
+
+[node name="OptionsButton" type="Button" parent="MenuOptions/CenterContainer/VBoxContainer" unique_id=1117703703]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("5_df05h")
+theme_override_font_sizes/font_size = 50
+text = "Opções"
+
+[node name="ExitButton" type="Button" parent="MenuOptions/CenterContainer/VBoxContainer" unique_id=1375242506]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("5_df05h")
+theme_override_font_sizes/font_size = 50
+text = "Sair do Jogo"
+
+[connection signal="pressed" from="MenuOptions/CenterContainer/VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]

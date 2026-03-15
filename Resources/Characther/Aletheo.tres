@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="ProtagonistData" format=3 uid="uid://c1vquw3u6sdb8"]
+
+[ext_resource type="Texture2D" uid="uid://f3ngxh4hab8j" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Exausted.png" id="1_lsvoi"]
+[ext_resource type="Texture2D" uid="uid://cjaudowkfigf2" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Focused.png" id="2_djswg"]
+[ext_resource type="Texture2D" uid="uid://hsvo0pcoaivg" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Neutral.png" id="3_tsoba"]
+[ext_resource type="Texture2D" uid="uid://deapjj86g00fe" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Shadow.png" id="4_8pt3q"]
+[ext_resource type="Texture2D" uid="uid://bb4e3dvaql2rr" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Skeptical.png" id="5_gcidv"]
+[ext_resource type="Script" uid="uid://c1pw5e5bx12d" path="res://Scripts/Resources/Characthers/AletheoData.gd" id="6_djswg"]
+
+[resource]
+resource_name = "AletheoData"
+script = ExtResource("6_djswg")
+portrait_exausted = ExtResource("1_lsvoi")
+portrait_focused = ExtResource("2_djswg")
+portrait_neutral = ExtResource("3_tsoba")
+portrait_shadow = ExtResource("4_8pt3q")
+portrait_skeptical = ExtResource("5_gcidv")

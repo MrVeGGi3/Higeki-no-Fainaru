@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://26hc8a54co6j"]
+
+[ext_resource type="Script" uid="uid://cjr10gvksdt8w" path="res://Scripts/Managers/TreeManager.gd" id="1_6lqni"]
+[ext_resource type="PackedScene" uid="uid://76i7snspnu7b" path="res://Scenes/NovelBase/CharactherPlacement.tscn" id="1_fb6wq"]
+[ext_resource type="PackedScene" uid="uid://bg3kyj6w3kiso" path="res://Scenes/NovelBase/background_placement.tscn" id="1_hn26s"]
+[ext_resource type="PackedScene" uid="uid://mlv1s4mptj5q" path="res://Scenes/NovelBase/DialogueBox.tscn" id="2_qwt01"]
+[ext_resource type="PackedScene" uid="uid://wautiw58tjxt" path="res://Scenes/NovelBase/InvestigationBox.tscn" id="3_qwt01"]
+[ext_resource type="PackedScene" uid="uid://dp1gdfk0hakq6" path="res://Scenes/NovelBase/ShaderBase.tscn" id="4_y8gdc"]
+[ext_resource type="Script" uid="uid://g6kibja6eym0" path="res://Scripts/Managers/investigation_manager.gd" id="6_colu7"]
+[ext_resource type="PackedScene" uid="uid://bkoa6gcc5ys7g" path="res://Scenes/ActsAndSpeeches/Introduction.tscn" id="7_hdhee"]
+[ext_resource type="Script" uid="uid://dot85r61yi320" path="res://Scripts/Narrative/Intro.gd" id="8_6lqni"]
+
+[node name="MainTree" type="Control" unique_id=317297953 node_paths=PackedStringArray("target_act_node")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6lqni")
+target_act_node = NodePath("Introdcution")
+
+[node name="BackgroundPlacement" parent="." unique_id=1210496996 instance=ExtResource("1_hn26s")]
+
+[node name="CharactherPlacement" parent="." unique_id=1258590061 instance=ExtResource("1_fb6wq")]
+
+[node name="DialogueBox" parent="." unique_id=60480764 instance=ExtResource("2_qwt01")]
+
+[node name="ShaderBase" parent="." unique_id=610477400 instance=ExtResource("4_y8gdc")]
+visible = false
+
+[node name="InvestigationBox" parent="." unique_id=1174013287 instance=ExtResource("3_qwt01")]
+visible = false
+script = ExtResource("6_colu7")
+
+[node name="Introdcution" parent="." unique_id=248170344 node_paths=PackedStringArray("background_placement", "characther_placement", "dialogue_box", "shader_base", "investigation_box") instance=ExtResource("7_hdhee")]
+script = ExtResource("8_6lqni")
+background_placement = NodePath("../BackgroundPlacement")
+characther_placement = NodePath("../CharactherPlacement")
+dialogue_box = NodePath("../DialogueBox")
+shader_base = NodePath("../ShaderBase")
+investigation_box = NodePath("../InvestigationBox")

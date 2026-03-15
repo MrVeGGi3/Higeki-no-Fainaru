@@ -1,0 +1,17 @@
+KEY,pt_BR,en,ja
+TITLE,O Lapso Final,Final Tragedy,悲劇のファイナル
+PRESS_START_PC,Pressione Espaço para Iniciar o Jogo,Press Space to Start the Game,スペースキーで開始
+PRESS_START_JOYSTICK,Pressione Start para Iniciar o Jogo,Press Start ,STARTボタンで開始
+PRESS_START_ANDROID,Pressione a Tela para Começar,Press the Screen to Start,画面をタップして開始
+START_GAME,Começar ,Start,実験開始
+OPTIONS_GAME,Opções,Options,設定
+EXIT_GAME,Sair,Exit,終了
+PROTAGONIST_NAME,Aletéo,Emmet,真司
+HELPER_NAME,Viviana,Vivienne,芽依
+MENTOR_NAME,Doutor Ari,Dr. Aris,アリス博士
+SHADOW_NAME,A Sombra,The Shadow,影
+LANGUAGE_SELECT,Português,English,日本語
+ALETHEO_MONOLOGUE_1,"A maioria das pessoas enxerga o tempo como um rio. Uma correnteza unidirecional, benevolente e inevitável. Elas aceitam a tirania da causalidade sem questionar. Mas para mim... o tempo nunca passou de um erro de sintaxe no universo.","For most people, time is like a river. A unidirectional flow, benevolent and inevitable. They accept the tyranny of causality without question. But to me... time has never been more than a syntax error in the universe.",ほとんどの人間にとって、時間は川のようなものだ。一方向へ流れ、慈悲深く、そして不可避なもの。彼らは疑問も抱かず、因果律という暴政を受け入れている。だが、僕にとっては… 時間とは宇宙の構文エラー（シンタックスエラー）に過ぎない。」
+ALETHEO_MONOLOGUE_2,"""Massa não surge do nada. Energia não se cria. O Primeiro Princípio da Termodinâmica é a âncora que impede o mundo de colapsar no caos absoluto. E, no entanto, aqui está ele. Um objeto que carrega a mesma assinatura atômica do meu relógio, mas com um gradiente de entropia impossível.""_","""Matter does not arise from nothing. Energy is not created. The First Law of Thermodynamics is the anchor that prevents the world from collapsing into absolute chaos. And yet, here it is. An object carrying the same atomic signature as my watch, but with an impossible entropy gradient.""",「物質は無から生じない。エネルギーは創造されない。熱力学第一法則は、世界が絶対的な混沌に陥るのを防ぐ錨だ。それなのに、ここにある。僕の時計と同じ原子署名を待ちながら、あり得ないエントロピーの勾配を持つ物体が。」
+ALETHEO_MONOLOGUE_3,"""Se a causalidade foi quebrada, a lógica que sustenta a minha existência também foi. O que eu estou vendo não é um milagre. É uma ferida aberta no tecido do espaço-tempo. E o pior de tudo... o pior é que uma parte de mim, a parte que deveria estar aterrorizada, está sentindo um êxtase repulsivo.""","""If causality is broken, the logic that sustains my existence has also collapsed. What I’m seeing isn’t a miracle. It’s a jagged scar in the fabric of space-time. And worst of all... the part of me that should be terrified is feeling a repulsive sense of euphoria.""",「もし因果律が壊れたのなら、僕の存在を支える論理もまた崩壊したことになる。僕が見ているのは奇跡じゃない。時空の織り目に刻まれた、むき出しの傷跡だ。そして何よりも… 恐怖を感じるべきはずの自分の一部が、おぞましいほどの高揚感を感じていることが、何より恐ろしい。」
+ALETHEO_MONOLOGUE_4," ""Eu sempre soube que o universo escondia segredos atrás das equações. Só não imaginei que a Verdade teria o cheiro de metal queimado e o gosto de um arrependimento que eu ainda não vivi.""","""I always knew the universe hid secrets behind its equations. I just never imagined that the 'Truth' would smell like burnt metal and taste like a regret I haven't lived yet.""",「宇宙が数式の裏側に秘密を隠していることは、ずっと前から分かっていた。だが、まさか『真実』が… 焼けた金属の臭いと、まだ経験していない後悔の味がするなんて、思いもしなかった。」

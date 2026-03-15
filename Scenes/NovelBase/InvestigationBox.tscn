@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://wautiw58tjxt"]
+
+[ext_resource type="Texture2D" uid="uid://bkt1tqj6vs8ng" path="res://Assets/Images/UI/TimeLoop/TimeLoopButton.png" id="1_fwvky"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fwvky"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="InvestigationBox" type="CanvasLayer" unique_id=1174013287]
+layer = 5
+
+[node name="TimeLapseButton" type="Button" parent="." unique_id=1728857175]
+offset_right = 8.0
+offset_bottom = 8.0
+scale = Vector2(0.5520342, 0.5520342)
+theme_override_styles/normal = SubResource("StyleBoxFlat_fwvky")
+icon = ExtResource("1_fwvky")

@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="Monologue" format=3 uid="uid://bsq2od4an7fhr"]
+
+[ext_resource type="Script" uid="uid://cyuod2hnhojr5" path="res://Scripts/Resources/Speeches/Introduction/Monologue.gd" id="1_yqbmq"]
+
+[resource]
+script = ExtResource("1_yqbmq")

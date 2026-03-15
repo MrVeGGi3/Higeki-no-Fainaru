@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BackgroundResource" format=3 uid="uid://dyi8ust57kb8l"]
+
+[ext_resource type="Texture2D" uid="uid://b2y0s1d70rt87" path="res://Assets/Images/Backgrounds/Introduction/BackgroundI.png" id="1_lelm4"]
+[ext_resource type="Script" uid="uid://bay772a4681ne" path="res://Scripts/Resources/Backgrounds/BackgroundPlacer.gd" id="1_wd8oh"]
+[ext_resource type="Texture2D" uid="uid://bont511r7pv4e" path="res://Assets/Images/Backgrounds/Introduction/BackgroundII.png" id="2_qw8mo"]
+[ext_resource type="Texture2D" uid="uid://b8bmhsvnubdsx" path="res://Assets/Images/Backgrounds/BlackBoard.png" id="3_mcsxx"]
+
+[resource]
+script = ExtResource("1_wd8oh")
+backgrounds = {
+"Blackboard": ExtResource("3_mcsxx"),
+"SocietyTime": ExtResource("1_lelm4"),
+"Termodynamics": ExtResource("2_qw8mo")
+}

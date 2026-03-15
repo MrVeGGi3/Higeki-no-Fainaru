@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bg3kyj6w3kiso"]
+
+[ext_resource type="Script" uid="uid://bmw5i6feisjji" path="res://Scripts/background_placement.gd" id="1_cbfwr"]
+
+[node name="BackgroundPlacement" type="CanvasLayer" unique_id=1210496996]
+layer = 0
+script = ExtResource("1_cbfwr")
+
+[node name="BackgroundRect" type="TextureRect" parent="." unique_id=1084990713]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

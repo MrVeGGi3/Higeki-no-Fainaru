@@ -1,0 +1,10 @@
+[gd_resource type="Theme" format=3 uid="uid://c04fgd2tmgswb"]
+
+[ext_resource type="FontFile" uid="uid://df27q6rr480lc" path="res://Fonts/Exo2-Bold.ttf" id="1_1hbls"]
+[ext_resource type="FontFile" uid="uid://bsgjqshb1c43o" path="res://Fonts/Exo2-Medium.ttf" id="2_sfq72"]
+
+[resource]
+RichTextLabel/font_sizes/bold_font_size = 30
+RichTextLabel/font_sizes/normal_font_size = 30
+RichTextLabel/fonts/bold_font = ExtResource("1_1hbls")
+RichTextLabel/fonts/normal_font = ExtResource("2_sfq72")

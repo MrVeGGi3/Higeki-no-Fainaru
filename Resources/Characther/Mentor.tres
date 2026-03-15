@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="MentorData" format=3 uid="uid://drv72lawmy70r"]
+
+[ext_resource type="Texture2D" uid="uid://b68w76lts7tmb" path="res://Assets/Images/Characthers/Mentor/Mentor_Calm.png" id="1_b0imy"]
+[ext_resource type="Texture2D" uid="uid://hirmbx8v6nu2" path="res://Assets/Images/Characthers/Mentor/Mentor_Judgment.png" id="2_1pexq"]
+[ext_resource type="Texture2D" uid="uid://bjnouquaafkll" path="res://Assets/Images/Characthers/Mentor/Mentor_Misterious.png" id="3_qcc18"]
+[ext_resource type="Texture2D" uid="uid://dddq6x4lvi65m" path="res://Assets/Images/Characthers/Mentor/Mentor_Restrictive.png" id="4_hebu4"]
+[ext_resource type="Script" uid="uid://didrr02e7qquk" path="res://Scripts/Resources/Characthers/DrAriData.gd" id="5_mpfbd"]
+
+[resource]
+script = ExtResource("5_mpfbd")
+portrait_calm = ExtResource("1_b0imy")
+portrait_judgement = ExtResource("2_1pexq")
+portrait_misterious = ExtResource("3_qcc18")
+portrait_restrictive = ExtResource("4_hebu4")

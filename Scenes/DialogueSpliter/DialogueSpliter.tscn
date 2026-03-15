@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://sx1eu3nldar5"]
+
+[ext_resource type="Script" uid="uid://tgfd5ejapm1b" path="res://Scripts/TypeWriter/Dialogue_Spliter.gd" id="1_ayw2w"]
+
+[node name="DialogueSpliter" type="Node" unique_id=1931016683]
+script = ExtResource("1_ayw2w")

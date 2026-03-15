@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ShadowData" format=3 uid="uid://dl0uxlcfjw3o1"]
+
+[ext_resource type="Texture2D" uid="uid://dmqashnoubiug" path="res://Assets/Images/Characthers/Shadow/Shadow_Static.png" id="1_eadlb"]
+[ext_resource type="Script" uid="uid://cbvq2jhd10v8v" path="res://Scripts/Resources/Characthers/ShadowData.gd" id="2_4b8if"]
+
+[resource]
+script = ExtResource("2_4b8if")
+portrait_static = ExtResource("1_eadlb")

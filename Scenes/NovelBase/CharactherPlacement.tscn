@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://76i7snspnu7b"]
+
+[ext_resource type="Script" uid="uid://dmda0tv61oos7" path="res://Scripts/Managers/CharScreenManager/char_screen_place.gd" id="1_3lny3"]
+[ext_resource type="Texture2D" uid="uid://cjaudowkfigf2" path="res://Assets/Images/Characthers/Aletheo/Aletheo_Focused.png" id="2_307ku"]
+
+[node name="CharactherPlacement" type="CanvasLayer" unique_id=1258590061]
+script = ExtResource("1_3lny3")
+
+[node name="Players" type="Control" parent="." unique_id=2069410939]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Characther1" type="TextureRect" parent="Players" unique_id=627230088]
+visible = false
+layout_mode = 0
+offset_left = 392.0
+offset_right = 1465.6
+offset_bottom = 1073.6
+texture = ExtResource("2_307ku")
+
+[node name="Characther2" type="TextureRect" parent="Players" unique_id=121766236]
+visible = false
+layout_mode = 0
+offset_right = 942.0
+offset_bottom = 942.0
+texture = ExtResource("2_307ku")
+
+[node name="Characther3" type="TextureRect" parent="Players" unique_id=1818735232]
+layout_mode = 0
+offset_left = 7.0
+offset_right = 769.0
+offset_bottom = 762.0
+texture = ExtResource("2_307ku")
+
+[node name="TexturePlacementMarkers" type="Node2D" parent="." unique_id=1121852183]
+
+[node name="ThreeCharMode" type="Node2D" parent="TexturePlacementMarkers" unique_id=1284906390]
+
+[node name="1" type="Marker2D" parent="TexturePlacementMarkers/ThreeCharMode" unique_id=1537005351]
+position = Vector2(7, 0)
+
+[node name="2" type="Marker2D" parent="TexturePlacementMarkers/ThreeCharMode" unique_id=1548594375]
+position = Vector2(612, 0)
+
+[node name="3" type="Marker2D" parent="TexturePlacementMarkers/ThreeCharMode" unique_id=1147443937]
+position = Vector2(1164, 0)
+
+[node name="DoubleCharMode" type="Node2D" parent="TexturePlacementMarkers" unique_id=790548388]
+
+[node name="1" type="Marker2D" parent="TexturePlacementMarkers/DoubleCharMode" unique_id=64441501]
+
+[node name="2" type="Marker2D" parent="TexturePlacementMarkers/DoubleCharMode" unique_id=1617839005]
+position = Vector2(974, 0)
+
+[node name="OneCharMode" type="Node2D" parent="TexturePlacementMarkers" unique_id=1542081291]
+
+[node name="1" type="Marker2D" parent="TexturePlacementMarkers/OneCharMode" unique_id=91180557]
+position = Vector2(392, 0)

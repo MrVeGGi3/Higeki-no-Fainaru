@@ -1,0 +1,10 @@
+[gd_resource type="Resource" format=3 uid="uid://cm436ynx6rc6s"]
+
+[sub_resource type="GDScript" id="GDScript_c8y5a"]
+script/source = "class_name DialogueSpeeches
+extends Resource
+
+"
+
+[resource]
+script = SubResource("GDScript_c8y5a")

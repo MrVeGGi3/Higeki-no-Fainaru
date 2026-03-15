@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://hhubw67sa0jt"
+
+[deps]
+
+files=["res://Data/HigekiNoFainaru - Localization - Core.pt_BR.translation", "res://Data/HigekiNoFainaru - Localization - Core.en.translation", "res://Data/HigekiNoFainaru - Localization - Core.ja.translation"]
+
+source_file="res://Data/HigekiNoFainaru - Localization - Core.csv"
+dest_files=["res://Data/HigekiNoFainaru - Localization - Core.pt_BR.translation", "res://Data/HigekiNoFainaru - Localization - Core.en.translation", "res://Data/HigekiNoFainaru - Localization - Core.ja.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

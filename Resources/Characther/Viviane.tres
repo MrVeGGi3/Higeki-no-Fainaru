@@ -1,0 +1,16 @@
+[gd_resource type="Resource" format=3 uid="uid://dxmaeiwow0tne"]
+
+[ext_resource type="Texture2D" uid="uid://ckba610gbpgtl" path="res://Assets/Images/Characthers/Viviane/Viviane_Determined.png" id="1_86207"]
+[ext_resource type="Texture2D" uid="uid://fwwxprh1l8ti" path="res://Assets/Images/Characthers/Viviane/Viviane_Alegre.png" id="2_n0v46"]
+[ext_resource type="Texture2D" uid="uid://cca1q0t2630dk" path="res://Assets/Images/Characthers/Viviane/Viviane_Sad.png" id="3_q7uhx"]
+[ext_resource type="Texture2D" uid="uid://48df1bicyakw" path="res://Assets/Images/Characthers/Viviane/Viviane_Surprised.png" id="4_bb13l"]
+[ext_resource type="Texture2D" uid="uid://cjgqfpsyfrpji" path="res://Assets/Images/Characthers/Viviane/Viviane_Worried.png" id="5_0x7j6"]
+[ext_resource type="Script" uid="uid://ck1idbpmggxeg" path="res://Scripts/Resources/Characthers/VivianeData.gd" id="6_6rnec"]
+
+[resource]
+script = ExtResource("6_6rnec")
+portrait_happy = ExtResource("2_n0v46")
+portrait_determined = ExtResource("1_86207")
+portrait_sad = ExtResource("3_q7uhx")
+portrait_surprised = ExtResource("4_bb13l")
+portrait_worried = ExtResource("5_0x7j6")
